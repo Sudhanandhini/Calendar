@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+
+    <!-- font family link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <style>
+            body {
+                 font-family: "Sofia", sans-serif;
+                 }
+        </style>
+
+    <link rel="stylesheet" href="../css/calender.css" />    
+</head>
+
+<body>
+
+    <!-- https://www.youtube.com/watch?v=v-y3B91Fhiw -->
+
+    <h1>calendar</h1>
+
+    <div class="calendar">
+
+         <header>
+            <h3></h3>
+            <nav>
+                <button id="prev"></button>
+                <button id="next"></button>
+            </nav>
+         </header>
+
+         <section>
+            <ul class="days">
+                <li>sun</li>
+                <li>mon</li>
+                <li>tue</li>
+                <li>wed</li>
+                <li>thu</li>
+                <li>fri</li>
+                <li>sat</li>
+             </ul>
+
+             <ul class="dates"></ul>
+         </section>
+
+    </div>
+
+    <script src="../js/calendar.js" defer></script>
+
+    <!--  defer mean stop
+    In HTML, the defer attribute in the <script> tag ensures 
+        that the script is executed after the HTML document has been 
+        fully parsed, but before the DOMContentLoaded event.
+ 
+       How defer works:
+       Deferred Execution: The script is downloaded in parallel 
+       while the HTML is being parsed, but its execution is deferred 
+       until the document is fully parsed.
+       Maintains Order: If there are multiple scripts with defer,
+        they will be executed in the order they appear in the document.
+        Doesn’t Block Parsing: Unlike normal scripts, 
+        which block the parsing of the HTML document
+         until the script is executed, scripts with defer allow
+          the HTML document to continue being processed 
+          while the script is fetched. -->
+
+          <!--it means the browser is reading and interpreting the HTML 
+          code line by line to build the structure of the web page.
+
+           Steps of Parsing:
+           Reading the HTML file: The browser downloads the HTML file 
+            from the server.
+            Breaking it down into pieces (tokens): The browser starts breaking
+            down the HTML into individual elements (tags, attributes, text, etc.).
+           Building the DOM (Document Object Model): As the browser parses the HTML,
+         it builds a structured tree called the DOM. The DOM is a representation 
+          of the HTML document in a tree-like structure where each element 
+         and attribute becomes a node.
+
+Why Parsing is Important:
+The browser needs to parse the HTML to understand the structure of the 
+webpage, apply styles (CSS), and execute scripts (JavaScript).
+ Parsing ensures that everything is correctly interpreted so 
+ the webpage is rendered properly.  -->
+
+</body>
+</html>
