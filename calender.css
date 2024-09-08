@@ -67,6 +67,11 @@ h3{
     border-width: 0.25em 0.25em 0 0 ;
     border-color: #ccc;
 }
+/* Pseudo-elements:
+::before is a pseudo-element that creates content before 
+the actual content of the selected element.
+Pseudo-elements like ::before and ::after are used to
+ add decorative content or other elements, often for styling purposes. */
 #next::before {
     transform: translate(-50% , -50%) rotate(45deg);
 }
@@ -79,7 +84,7 @@ h3{
 .days{
     font-weight: 600;
 }
-.dates li .today{
+.dates li.today{
     color: #fff;
 }
 .dates li.today::before{
@@ -96,4 +101,9 @@ h3{
 }
 .dates li.inactive{
     color:#ccc;
+}
+@media(max-width:450px){
+    .calendar{
+        width:90%;
+    }
 }
